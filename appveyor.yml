@@ -27,8 +27,8 @@ test_script:
   # restore packages for our unit tests
   - cmd: dotnet restore ./ark-netTests/ark-netTests.csproj --verbosity m
   # run the unit tests (requires changing into the test directory)
-  - cmd: cd ark-netTests
-  - cmd: dotnet test
+  - cmd: cd ark-netTests 
+  - cmd: dotnet test ./ark-netTests.csproj
   
 on_finish :
   # any cleanup in here
