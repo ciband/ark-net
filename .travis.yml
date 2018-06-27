@@ -1,0 +1,10 @@
+language: csharp
+dist: trusty
+mono: none
+dotnet: 2.0
+install:
+- dotnet restore ark-netTests/ark-netTests.csproj
+
+script:
+- dotnet build ark-netTests/ark-netTests.csproj
+- dotnet test ark-netTests/ark-netTests.csproj
